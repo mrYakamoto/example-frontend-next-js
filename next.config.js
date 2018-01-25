@@ -8,7 +8,7 @@ module.exports = {
   exportPathMap: function () {
     return {
       '/': { page: '/' },
-      '/movies': { page: '/movies' }
+      '/articles': { page: '/articles' }
     }
   },
   assetPrefix: !debug ? '/Next-gh-page-example/' : ''

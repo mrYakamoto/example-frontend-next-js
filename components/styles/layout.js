@@ -16,21 +16,19 @@ footer img {
 }
 
 nav {
-  position: fixed;
-  display: flex;
-  align-items: stretch;
-  top: 0;
-  left: 0;
-  width: 100%;
+  align-items: center;
   background-color: #333;
-  padding: 1em;
+  display: flex;
   font-size: 1rem;
+  height: 3.5rem;
+  left: 0;
+  padding: 0 1em;
+  top: 0;
+  width: 100%;
 }
 
 nav a {
-  flex-grow: 1;
   color: #fff;
   text-decoration: none;
-  text-align: center;
 }
 `

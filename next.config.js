@@ -11,5 +11,5 @@ module.exports = {
       '/articles': { page: '/articles' }
     }
   },
-  assetPrefix: !debug ? '/Next-gh-page-example/' : ''
+  assetPrefix: !debug ? 'file:///Users/gregoryweh/Desktop/g-dev/react/next/example-frontend-next-js/out/' : ''
 }

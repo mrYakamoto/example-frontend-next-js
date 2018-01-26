@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'next/link'
 import Layout from '../components/Layout'
 import sanity from '../lib/sanity'
-import styles from './styles/articles'
 import listStyles from './styles/list'
 
 const query = `*[_type == "article"] {
@@ -34,7 +33,6 @@ export default class Articles extends React.Component {
             </li>
           ))}
         </ul>
-        <style jsx>{styles}</style>
         <style jsx>{listStyles}</style>
       </Layout>
     )

@@ -1,50 +1,59 @@
-import css from 'styled-jsx/css'
 
-export default css`
 .grid-container {
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
   max-width: 62.5rem;
-  margin: 0 auto; }
-  .grid-container.fluid {
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-    max-width: 100%;
-    margin: 0 auto; }
-  .grid-container.full {
-    padding-right: 0;
-    padding-left: 0;
-    max-width: 100%;
-    margin: 0 auto; }
+  margin: 0 auto;
+}
+.grid-container.fluid {
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.grid-container.full {
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 100%;
+  margin: 0 auto;
+}
 
 .grid-x {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
-      flex-flow: row wrap; }
+  flex-flow: row wrap;
+}
 
 .cell {
   -ms-flex: 0 0 auto;
       flex: 0 0 auto;
   min-height: 0px;
   min-width: 0px;
-  width: 100%; }
-  .cell.auto {
+  width: 100%;
+}
+.cell.auto {
     -ms-flex: 1 1 0px;
-        flex: 1 1 0px; }
-  .cell.shrink {
-    -ms-flex: 0 0 auto;
-        flex: 0 0 auto; }
+    flex: 1 1 0px;
+}
+
+.cell.shrink {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
 
 .grid-x > .auto {
-  width: auto; }
+  width: auto;
+}
 
 .grid-x > .shrink {
-  width: auto; }
+  width: auto;
+}
 
 .grid-x > .small-shrink, .grid-x > .small-full, .grid-x > .small-1, .grid-x > .small-2, .grid-x > .small-3, .grid-x > .small-4, .grid-x > .small-5, .grid-x > .small-6, .grid-x > .small-7, .grid-x > .small-8, .grid-x > .small-9, .grid-x > .small-10, .grid-x > .small-11, .grid-x > .small-12 {
   -ms-flex-preferred-size: auto;
-      flex-basis: auto; }
+      flex-basis: auto;
+    }
 
 @media print, screen and (min-width: 40em) {
   .grid-x > .medium-shrink, .grid-x > .medium-full, .grid-x > .medium-1, .grid-x > .medium-2, .grid-x > .medium-3, .grid-x > .medium-4, .grid-x > .medium-5, .grid-x > .medium-6, .grid-x > .medium-7, .grid-x > .medium-8, .grid-x > .medium-9, .grid-x > .medium-10, .grid-x > .medium-11, .grid-x > .medium-12 {
@@ -1510,4 +1519,4 @@ export default css`
         flex-direction: column; }
   .large-flex-dir-column-reverse {
     -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse; }}`
+        flex-direction: column-reverse; }}

@@ -1,43 +1,44 @@
-/* styles.js */
 import css from 'styled-jsx/css'
 
 export default css`
-.article > h2 {
+.article {
+  & > h2 {
   margin: 2rem 0 0 0;
   padding: 0 0.5rem;
   border-bottom: 1px solid #ccc;
-}
+  }
 
-.article .list img {
-  width: 2rem;
-  height: 2rem;
-  margin-right: 0.5rem;
-  object-fit: cover;
+  & .list {
+    line-height: 2rem;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.5rem;
+      object-fit: cover;
+    }
+  }
 }
 
 .article__header {
   clear: both;
   overflow: hidden;
   padding: 0.5rem;
-}
 
-.article__header > h1 {
-  font-size: 3rem;
-  line-height: 1em;
-  margin: 1rem 0 0 0;
-  padding: 0;
-}
+  & > h1 {
+    font-size: 3rem;
+    line-height: 1em;
+    margin: 1rem 0 0 0;
+    padding: 0;
+  }
 
-.article__header > img {
-  display: block;
-  width: 33vw;
-  max-width: 20rem;
-  height: auto;
-  float: left;
-  margin-right: 0.5rem;
-}
-
-.article .list {
-  line-height: 2rem;
+  & > img {
+    display: block;
+    width: 33vw;
+    max-width: 20rem;
+    height: auto;
+    float: left;
+    margin-right: 0.5rem;
+  }
 }
 `

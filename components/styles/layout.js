@@ -20,7 +20,8 @@ nav {
 }
 
 footer {
-  background-color: red;
+  background-color: ${colors.grey};
+  color: ${colors.white};
   padding: 5rem 1rem;
   text-align: center;
   font-size: 2rem;

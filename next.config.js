@@ -3,7 +3,6 @@
 // (But you could use ES2015 features supported by your Node.js version)
 
 const debug = process.env.NODE_ENV !== 'production'
-
 module.exports = {
   exportPathMap: function () {
     return {
@@ -11,5 +10,5 @@ module.exports = {
       '/articles': { page: '/articles' }
     }
   },
-  assetPrefix: !debug ? '' : 'file:///Users/gregoryweh/Desktop/g-dev/react/next/example-frontend-next-js/out/'
+  // assetPrefix: !debug ? 'file:///Users/gregoryweh/Desktop/g-dev/react/next/example-frontend-next-js/out/' : ''
 }

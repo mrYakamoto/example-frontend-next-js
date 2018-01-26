@@ -1,4 +1,6 @@
+import css from 'styled-jsx/css'
 
+export default css`
 .grid-container {
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
@@ -1520,3 +1522,4 @@
   .large-flex-dir-column-reverse {
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse; }}
+`

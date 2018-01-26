@@ -23,12 +23,6 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "postcss": {
-    "plugins": {
-      "lost": {},
-      "postcss-nested": {}
-    }
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sanity-io/example-frontend-next-js.git"

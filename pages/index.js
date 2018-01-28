@@ -1,9 +1,9 @@
 import React from 'react'
 import sanity from '../lib/sanity'
 
-import Layout from '../components/Layout'
-import Articles from '../components/Articles'
-import SideBar from '../components/SideBar'
+import Layout from 'templates/Layout'
+import Articles from 'components/Articles'
+import SideBar from 'components/SideBar'
 
 const query = `*[_type == "article"] {
   _id,

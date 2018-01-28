@@ -1,10 +1,10 @@
 import Head from 'next/head'
 
 import styles from './styles/layout'
-import foundationNormalize from './styles/foundation-normalize'
-import foundationGrid from './styles/foundation-xy-grid'
+import foundationNormalize from 'lib/foundation-normalize'
+import foundationGrid from 'lib/foundation-xy-grid'
 
-import Header from './Header'
+import Header from 'components/Header'
 
 const Layout = props => (
   <div>

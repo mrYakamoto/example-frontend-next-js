@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
-import Layout from './Layout'
-import Article from './Article'
+
+import Layout from 'templates/Layout'
+import Article from 'components/Article'
 import styles from './styles/articles'
 
 const Articles = (props) => {

@@ -1,5 +1,5 @@
 import css from 'styled-jsx/css'
-import { colors, spacing } from './variables'
+import { colors, spacing } from 'variables'
 
 const navItemPadding = '1rem'
 
@@ -30,7 +30,7 @@ nav {
     display: flex;
 
     &:hover {
-      background-color: ${colors.white};
+      background-color: ${colors.greys.darkGrey};
     }
   }
 }

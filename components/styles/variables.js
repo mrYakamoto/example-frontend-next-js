@@ -6,7 +6,7 @@ export const spacing = {
 export const colors = {
   greys: {
     grey: '#333',
-    darkerGrey: 'darken(#333, 15%)'
+    darkGrey: '#000'
   },
   white: '#fff'
 }

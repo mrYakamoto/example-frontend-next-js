@@ -1,19 +1,19 @@
 import Head from 'next/head'
-import Link from 'next/link'
-import styles from './styles/layout'
-import foundationNormalize from './styles/foundation-normalize'
-import foundationGrid from './styles/foundation-xy-grid'
 
-export default props => (
+import styles from './styles/layout'
+import foundationNormalize from 'lib/foundation-normalize'
+import foundationGrid from 'lib/foundation-xy-grid'
+
+import Header from 'components/Header'
+
+const Layout = props => (
   <div>
     <Head>
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Jason O. Gilbert</title>
     </Head>
-    <nav>
-      <Link href="/articles"><a>About Me</a></Link>
-    </nav>
+    <Header />
     <div id="main">
       {props.children}
     </div>
@@ -25,3 +25,5 @@ export default props => (
     <style jsx>{styles}</style>
   </div>
 )
+
+export default Layout

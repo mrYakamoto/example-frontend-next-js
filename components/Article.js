@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import style from './styles/article'
 
-export default (props) => {
+const Article = (props) => {
 
   return (
     <div>
@@ -15,3 +15,5 @@ export default (props) => {
     </div>
   )
 }
+
+export default Article

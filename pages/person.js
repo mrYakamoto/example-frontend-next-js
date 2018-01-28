@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
-import Layout from '../components/Layout'
 import sanity from '../lib/sanity'
-import listStyles from './styles/list'
+
+import Layout from 'templates/Layout'
 // import styles from './styles/person'
 
 const query = `*[_type == "person" && _id == $id] {
@@ -50,7 +50,6 @@ export default class Person extends React.Component {
             ))}
           </ul>
         </div>
-        <style jsx>{listStyles}</style>
       </Layout>
     )
   }

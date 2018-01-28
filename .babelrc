@@ -10,5 +10,20 @@
         }
       }
     ]
+  ],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./"],
+        "alias": {
+          "components": "./components",
+          "lib": "./lib",
+          "pages": "./pages",
+          "templates": "./components/templates/",
+          "variables": "./components/styles/variables.js"
+        }
+      }
+    ]
   ]
 }

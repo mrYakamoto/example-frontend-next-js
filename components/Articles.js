@@ -1,10 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
-import Layout from './Layout'
-import Article from './Article'
-import listStyles from './styles/list'
 
-export default (props) => {
+import Layout from 'templates/Layout'
+import Article from 'components/Article'
+import styles from './styles/articles'
+
+const Articles = (props) => {
   const {articles} = props
 
   return (
@@ -16,7 +17,9 @@ export default (props) => {
           </li>
         ))}
       </ul>
-      <style jsx>{listStyles}</style>
+      <style jsx>{styles}</style>
     </div>
   )
 }
+
+export default Articles

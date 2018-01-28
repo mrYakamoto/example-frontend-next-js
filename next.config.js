@@ -6,8 +6,8 @@ const debug = process.env.NODE_ENV !== 'production'
 module.exports = {
   exportPathMap: function () {
     return {
-      '/': { page: '/' },
-      '/articles': { page: '/articles' }
+      '/': { page: '/' }
+      // '/articles': { page: '/articles' }
     }
   },
   // assetPrefix: !debug ? 'file:///Users/gregoryweh/Desktop/g-dev/react/next/example-frontend-next-js/out/' : ''

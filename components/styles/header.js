@@ -28,6 +28,7 @@ nav {
   .nav-item {
     align-items: center;
     display: flex;
+    transition: background-color .3s;
 
     &:hover {
       background-color: ${colors.greys.darkGrey};

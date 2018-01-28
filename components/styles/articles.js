@@ -4,6 +4,7 @@ export default css`
 .cell {
   background: aliceblue;
 }
+
 .list {
   list-style: none;
   padding: 0;

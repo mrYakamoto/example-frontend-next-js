@@ -3,7 +3,6 @@ import Link from 'next/link'
 import Layout from '../components/Layout'
 import sanity from '../lib/sanity'
 import styles from './styles/article'
-import listStyles from './styles/list'
 
 const query = `*[_type == "article" && _id == $id] {
   _id,
@@ -31,7 +30,6 @@ export default class Article extends React.Component {
           </div>
         </div>
         <style jsx>{styles}</style>
-        <style jsx>{listStyles}</style>
       </Layout>
     )
   }

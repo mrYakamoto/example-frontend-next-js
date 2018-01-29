@@ -10,7 +10,7 @@ const Article = (props) => {
   const articleUrl = _get(props, '')
   const imgRef = _get(props, 'image')
 
-  const imgUrl = urlFor(imgRef).height(248).width(434).crop('center').fit('crop')
+  const imgUrl = urlFor(imgRef).height(248).width(434).fit('crop')
   return (
     <div className='article-card'>
       <img src={imgUrl} alt='lorem' />

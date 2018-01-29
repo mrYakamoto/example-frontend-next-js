@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import sanity from '../lib/sanity'
 
-import Layout from 'templates/Layout'
+import Layout from 'layouts/Main'
 import styles from './styles/article'
 
 const query = `*[_type == "article" && _id == $id] {

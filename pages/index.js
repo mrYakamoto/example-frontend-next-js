@@ -1,13 +1,14 @@
 import React from 'react'
-import sanity from '../lib/sanity'
+import { configuredSanityClient } from 'lib/sanity'
 
-import Layout from 'templates/Layout'
+import Layout from 'layouts/Main'
 import Articles from 'components/Articles'
 import SideBar from 'components/SideBar'
 
 const articlesQuery = `*[_type == 'article'] {
   _id,
-  title
+  title,
+  image
 }[0...50]
 `
 
@@ -19,15 +20,15 @@ const publicationsQuery = `*[_type == 'publication'] {
 export default class IndexPage extends React.Component {
   static async getInitialProps() {
     return {
-      articles: await sanity.fetch(articlesQuery),
-      publications: await sanity.fetch(publicationsQuery)
+      articles: await configuredSanityClient.fetch(articlesQuery),
+      publications: await configuredSanityClient.fetch(publicationsQuery)
     }
   }
 
   render() {
     return (
       <Layout>
-        <div className='grid-container'>
+        <div className='grid-container fluid'>
           <div className='grid-x'>
             <div className='cell small-4 grid-x grid-padding-x'>
               <SideBar publications={this.props.publications}/>

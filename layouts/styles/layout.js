@@ -5,8 +5,7 @@ export default css`
 footer {
   background-color: ${colors.greys.grey};
   color: ${colors.white};
-  padding: 5rem 1rem;
+  padding: .5rem 1rem;
   text-align: center;
-  font-size: 2rem;
 }
 `

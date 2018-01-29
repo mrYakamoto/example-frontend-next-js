@@ -6,6 +6,8 @@
   "main": "index.js",
   "dependencies": {
     "@sanity/client": "^0.120.0",
+    "@sanity/image-url": "^0.125.0-rc.0",
+    "lodash.get": "^4.4.2",
     "next": "^4.1.4",
     "node-sass": "^4.7.2",
     "react": "^16.1.0",

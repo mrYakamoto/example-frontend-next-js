@@ -20,7 +20,7 @@
           "components": "./components",
           "lib": "./lib",
           "pages": "./pages",
-          "templates": "./components/templates/",
+          "layouts": "./layouts/",
           "variables": "./components/styles/variables.js"
         }
       }

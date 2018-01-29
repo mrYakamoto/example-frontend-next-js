@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import sanity from '../lib/sanity'
 
-import Layout from 'templates/Layout'
+import Layout from 'layouts/Main'
 
 const query = `*[_type == "person"] {
   _id,

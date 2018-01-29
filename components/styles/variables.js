@@ -4,9 +4,10 @@ export const spacing = {
 }
 
 export const colors = {
+  black: '#000',
   greys: {
     grey: '#333',
-    darkGrey: '#000'
+    darkGrey: '#111'
   },
   white: '#fff'
 }

@@ -2,6 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import style from './styles/article'
 
+import _get from 'lodash.get'
+
 const Article = (props) => {
 
   return (

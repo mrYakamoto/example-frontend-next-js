@@ -7,7 +7,8 @@ import SideBar from 'components/SideBar'
 
 const articlesQuery = `*[_type == 'article'] {
   _id,
-  title
+  title,
+  image
 }[0...50]
 `
 

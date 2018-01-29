@@ -5,6 +5,7 @@ import foundationNormalize from 'lib/foundation-normalize'
 import foundationGrid from 'lib/foundation-xy-grid'
 
 import Header from 'components/Header'
+import Footer from 'components/Footer'
 
 const MainLayout = props => (
   <div>
@@ -17,9 +18,7 @@ const MainLayout = props => (
     <div id="main">
       {props.children}
     </div>
-    <footer>
-      <p>©Lorem Ipsum 2018</p>
-    </footer>
+    <Footer />
     <style jsx global>{foundationNormalize}</style>
     <style jsx global>{foundationGrid}</style>
     <style jsx>{styles}</style>

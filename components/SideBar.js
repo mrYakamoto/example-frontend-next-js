@@ -1,12 +1,17 @@
 import React from 'react'
 import style from './styles/sidebar'
+import Publication from 'components/Publication'
 
 export default (props) => {
+
   return (
     <div className='sidebar cell'>
-      <h1>SIDEBAR</h1>
-      {props.publications.map(function(publication) {
-        return <h2 key={publication._id}>{publication.name}</h2>
+      {props.publications.map(function(publicationContent) {
+        return (
+          <div key={publicationContent._id}>
+            <Publication {...publicationContent} />
+          </div>
+        )
       })}
       <style jsx>{style}</style>
     </div>

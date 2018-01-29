@@ -8,13 +8,16 @@ import SideBar from 'components/SideBar'
 const articlesQuery = `*[_type == 'article'] {
   _id,
   title,
-  image
+  image,
+  articleUrl
 }[0...50]
 `
 
 const publicationsQuery = `*[_type == 'publication'] {
   _id,
-  name
+  name,
+  logo,
+  publicationUrl
 }`
 
 export default class IndexPage extends React.Component {

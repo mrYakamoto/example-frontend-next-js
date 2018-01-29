@@ -6,7 +6,7 @@ import foundationGrid from 'lib/foundation-xy-grid'
 
 import Header from 'components/Header'
 
-const Layout = props => (
+const MainLayout = props => (
   <div>
     <Head>
       <meta charSet="utf-8" />
@@ -18,7 +18,7 @@ const Layout = props => (
       {props.children}
     </div>
     <footer>
-      <h1>FOOTER</h1>
+      <p>©Lorem Ipsum 2018</p>
     </footer>
     <style jsx global>{foundationNormalize}</style>
     <style jsx global>{foundationGrid}</style>
@@ -26,4 +26,4 @@ const Layout = props => (
   </div>
 )
 
-export default Layout
+export default MainLayout

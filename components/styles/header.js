@@ -5,17 +5,21 @@ const navItemPadding = '1rem'
 
 export default css`
 header {
-  background-color: ${colors.greys.grey};
+  margin-bottom: .5rem;
 
   .grid-container {
     align-items: center;
   }
 
   a {
-    color: ${colors.white};
+    color: ${colors.black};
     padding: 0 ${spacing.gutter};
     text-decoration: none;
   }
+}
+
+.divider {
+  border-bottom: 1px solid ${colors.greys.grey};
 }
 
 nav {

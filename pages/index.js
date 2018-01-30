@@ -33,10 +33,10 @@ export default class IndexPage extends React.Component {
       <Layout>
         <div className='grid-container fluid'>
           <div className='grid-x'>
-            <div className='cell small-4 grid-x grid-padding-x'>
+            <div className='cell medium-4 grid-x grid-padding-x'>
               <SideBar publications={this.props.publications}/>
             </div>
-            <div className='cell small-8 grid-x grid-padding-x'>
+            <div className='cell medium-8 grid-x grid-padding-x'>
               <Articles articles={this.props.articles}/>
             </div>
           </div>

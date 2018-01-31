@@ -16,7 +16,7 @@ const articlesQuery = `*[_type == 'article'] {
 const publicationsQuery = `*[_type == 'publication'] {
   _id,
   name,
-  logo,
+  image,
   publicationUrl,
   "articles": *[_type == 'article' && references(^._id)]{
     title,

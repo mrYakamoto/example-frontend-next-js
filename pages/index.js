@@ -5,20 +5,22 @@ import Layout from 'layouts/Main'
 import Articles from 'components/Articles'
 import SideBar from 'components/SideBar'
 
-const articlesQuery = `*[_type == 'article'] {
+const articlesQuery = `*[_type == 'article'] | order(weight desc, date desc) {
   _id,
   title,
   image,
-  articleUrl
-}[0...50]
+  articleUrl,
+  weight
+} [0...50]
 `
 
-const publicationsQuery = `*[_type == 'publication'] {
+const publicationsQuery = `*[_type == 'publication'] | order(weight desc) {
   _id,
   name,
   image,
   publicationUrl,
-  "articles": *[_type == 'article' && references(^._id)]{
+  weight,
+  "articles": *[_type == 'article' && references(^._id)] | order(weight desc, date desc) {
     title,
     articleUrl
   }
@@ -33,6 +35,7 @@ export default class IndexPage extends React.Component {
   }
 
   render() {
+    debugger
     return (
       <Layout>
         <div className='grid-container fluid'>

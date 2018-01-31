@@ -18,7 +18,6 @@ const publicationsQuery = `*[_type == 'publication'] | order(weight desc) {
   _id,
   name,
   image,
-  publicationUrl,
   weight,
   "articles": *[_type == 'article' && references(^._id)] | order(weight desc, date desc) {
     title,
@@ -35,7 +34,6 @@ export default class IndexPage extends React.Component {
   }
 
   render() {
-    debugger
     return (
       <Layout>
         <div className='grid-container fluid'>

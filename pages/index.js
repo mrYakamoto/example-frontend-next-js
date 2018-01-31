@@ -17,7 +17,11 @@ const publicationsQuery = `*[_type == 'publication'] {
   _id,
   name,
   logo,
-  publicationUrl
+  publicationUrl,
+  "articles": *[_type == 'article' && references(^._id)]{
+    title,
+    articleUrl
+  }
 }`
 
 export default class IndexPage extends React.Component {

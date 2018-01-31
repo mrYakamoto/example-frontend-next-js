@@ -1,22 +1,66 @@
 import React from 'react'
-// import style from './styles/'
+import style from './styles/publication'
 
 import _get from 'lodash.get'
 import { urlFor } from 'lib/sanity'
 
-export default (props) => {
-  const id = _get(props, '_id')
-  const name = _get(props, 'name')
-  const publicationUrl = _get(props, 'publicationUrl')
+export default class Publication extends React.Component{
+  constructor(props) {
+    super(props)
+    this.state = {
+      isOpen: false
+    }
 
-  const imgRef = _get(props, 'logo')
-  const imgUrl = urlFor(imgRef).url()
+    this.handleClick = this.handleClick.bind(this)
+    this.toggleAccordion = this.toggleAccordion.bind(this)
+  }
 
-  return (
-    <div className='publication'>
-      <a href={publicationUrl} target='_blank'>
-        <img src={imgUrl}/>
-      </a>
-    </div>
-  )
+  handleClick(evt) {
+    this.toggleAccordion()
+  }
+
+  toggleAccordion() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    })
+  }
+
+  render() {
+    let id = _get(this.props, '_id')
+    let publicationUrl = _get(this.props, 'publicationUrl')
+    let articles = _get(this.props, 'articles', [])
+
+    let imgRef = _get(this.props, 'logo', {})
+    let imgUrl = urlFor(imgRef).url()
+
+    let panelStyle = this.state.isOpen
+      ? {maxHeight: `${this.refs.panel.scrollHeight}px`}
+      : {maxHeight: '0'}
+
+    return (
+      <div className='publication'>
+        <button className='accordion' onClick={this.handleClick}>
+          <img src={imgUrl}/>
+        </button>
+        <div ref='panel' className='panel' style={panelStyle}>
+          <ul className='articles'>
+            {articles.map(function(article, i) {
+              return (
+                <li key={`${id}-${i}`}>
+                  <a
+                    className='article-link'
+                    href={article.articleUrl}
+                    target='_blank'
+                  >
+                    {article.title}
+                  </a>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+        <style jsx>{style}</style>
+      </div>
+    )
+  }
 }

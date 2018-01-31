@@ -13,8 +13,8 @@ const Article = (props) => {
   const imgUrl = urlFor(imgRef).height(248).width(434).fit('crop')
   return (
     <div className='article-card'>
-      <a href={articleUrl} target='_blank'>
-        <img src={imgUrl} alt='lorem' />
+      <a className='article-link' href={articleUrl} target='_blank'>
+        <img className='image' src={imgUrl} alt='lorem' />
         <div className='overlay'>
           {title && <h3>{title}</h3>}
         </div>

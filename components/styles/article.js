@@ -3,8 +3,8 @@ import { colors } from 'variables'
 
 export default css`
 .article-card {
-  height: 100%;
   overflow: hidden;
+  padding-bottom: 57.1428%;
   position: relative;
 
   &:hover {
@@ -13,6 +13,10 @@ export default css`
       visibility: visible;
     }
   }
+}
+
+.image {
+  width: 100%;
 }
 
 .article-link {
@@ -29,7 +33,6 @@ export default css`
   cursor: pointer;
   height: 100%;
   left: 0;
-  max-width: 434px;
   padding: 1rem;
   position: absolute;
   text-decoration: none;

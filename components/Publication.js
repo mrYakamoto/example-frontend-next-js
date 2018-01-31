@@ -30,7 +30,7 @@ export default class Publication extends React.Component{
     let publicationUrl = _get(this.props, 'publicationUrl')
     let articles = _get(this.props, 'articles', [])
 
-    let imgRef = _get(this.props, 'logo', {})
+    let imgRef = _get(this.props, 'image', {})
     let imgUrl = urlFor(imgRef).url()
 
     let panelStyle = this.state.isOpen

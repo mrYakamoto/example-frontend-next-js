@@ -4,6 +4,7 @@ import { colors } from 'variables'
 export default css`
 .article-card {
   overflow: hidden;
+  padding-bottom: 57.1428%;
   position: relative;
 
   &:hover {
@@ -12,6 +13,18 @@ export default css`
       visibility: visible;
     }
   }
+}
+
+.image {
+  width: 100%;
+}
+
+.article-link {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .overlay {

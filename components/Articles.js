@@ -10,7 +10,7 @@ const Articles = (props) => {
 
   return (
     <div className='articles-container cell'>
-      <ul className="list grid-x grid-padding-x small-up-2 small-padding-collapse">
+      <ul className="list grid-x grid-padding-x small-up-1 large-up-2 small-padding-collapse">
         {articles.map(article => (
           <li key={article._id} className="list__item cell">
             <Article {...article} />

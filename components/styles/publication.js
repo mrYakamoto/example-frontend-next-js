@@ -3,11 +3,17 @@ import { colors } from 'variables'
 
 export default css`
 .accordion {
+  width: 100%;
+
   &:active,
   &:focus {
     border: none;
     outline: none;
   }
+}
+
+.publication-logo {
+  max-height: 3rem;
 }
 
 .panel {

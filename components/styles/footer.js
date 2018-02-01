@@ -6,8 +6,12 @@ footer {
   color: ${colors.black};
   padding: 3rem 1rem;
   text-align: right;
-}
-.divider {
-  border-top: 1px solid ${colors.greys.grey};
+
+  &::before {
+    content: '';
+    display: block;
+    border-bottom: 1px solid ${colors.greys.grey};
+    width: 100%;
+  }
 }
 `

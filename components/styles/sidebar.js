@@ -4,4 +4,8 @@ export default css`
 .sidebar {
   position: 'static';
 }
+
+.publication-wrapper {
+  margin-bottom: 1rem;
+}
 `

@@ -8,7 +8,7 @@ export default (props) => {
     <div className='sidebar cell'>
       {props.publications.map(function(publicationContent) {
         return (
-          <div key={publicationContent._id}>
+          <div className='publication-wrapper' key={publicationContent._id}>
             <Publication {...publicationContent} />
           </div>
         )

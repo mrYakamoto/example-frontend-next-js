@@ -3,6 +3,7 @@ import { colors } from 'variables'
 
 export default css`
 .accordion {
+  text-align: left;
   width: 100%;
 
   &:active,
@@ -13,7 +14,7 @@ export default css`
 }
 
 .publication-logo {
-  max-height: 3rem;
+  max-height: 2rem;
 }
 
 .panel {
@@ -24,7 +25,6 @@ export default css`
 .articles {
   list-style: none;
   padding: 0;
-  text-align: center;
 }
 
 .article-link {

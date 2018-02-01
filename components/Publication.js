@@ -39,7 +39,7 @@ export default class Publication extends React.Component{
     return (
       <div className='publication'>
         <button className='accordion' onClick={this.handleClick}>
-          <img src={imgUrl}/>
+          <img className='publication-logo' src={imgUrl}/>
         </button>
         <div ref='panel' className='panel' style={panelStyle}>
           <ul className='articles'>

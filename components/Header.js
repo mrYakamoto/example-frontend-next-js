@@ -13,31 +13,30 @@ const Header = (props) => {
   }
 
   return (
-    <header>
-      <div className='grid-container grid-x'>
-        <Link href='/'><a className='cell small-3'>Jason O. Gilbert</a></Link>
-        <nav className='cell small-9'>
-          <Link href="/articles"><a className='nav-item'>About Me</a></Link>
-          <a className='twitter-link nav-item' href=''>
-            <div className='icon-wrapper'>
-              <TwitterIcon style={iconStyle}/>
-            </div>
-          </a>
-          <a className='linkedIn-link nav-item' href=''>
-            <div className='icon-wrapper'>
-              <LinkedInIcon style={iconStyle}/>
-            </div>
-          </a>
-          <a className='facebook-link nav-item' href=''>
-            <div className='icon-wrapper'>
-              <FacebookIcon style={iconStyle}/>
-            </div>
-          </a>
-        </nav>
-      </div>
-      <div className='grid-container fluid'>
-        <div className='divider' />
-      </div>
+    <header className='grid-container fluid grid-x'>
+      <Link href='/'>
+        <a className='cell small-3'>
+          <h3 className='page-title'>Jason O. Gilbert</h3>
+        </a>
+      </Link>
+      <nav className='cell small-9'>
+        <Link href="/articles"><a className='nav-item'>About Me</a></Link>
+        <a className='twitter-link nav-item' href=''>
+          <div className='icon-wrapper'>
+            <TwitterIcon style={iconStyle}/>
+          </div>
+        </a>
+        <a className='linkedIn-link nav-item' href=''>
+          <div className='icon-wrapper'>
+            <LinkedInIcon style={iconStyle}/>
+          </div>
+        </a>
+        <a className='facebook-link nav-item' href=''>
+          <div className='icon-wrapper'>
+            <FacebookIcon style={iconStyle}/>
+          </div>
+        </a>
+      </nav>
       <style jsx>{styles}</style>
     </header>
   )

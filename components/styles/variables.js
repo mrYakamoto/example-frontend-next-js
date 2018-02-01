@@ -1,5 +1,6 @@
 export const spacing = {
   gutter: '0.9375rem',
+  gutters: '1.875rem',
   headerHeight: '5rem'
 }
 

@@ -23,20 +23,20 @@ header {
 }
 
 nav {
-  align-items: stretch;
+  align-items: center;
   display: flex;
   font-size: 1rem;
   height: ${spacing.headerHeight};
   justify-content: flex-end;
+}
 
-  .nav-item {
-    align-items: center;
-    display: flex;
-    transition: background-color .3s;
+.nav-item {
+  align-items: center;
+  display: flex;
+}
 
-    &:hover {
-      background-color: ${colors.greys.darkGrey};
-    }
-  }
+.icon-wrapper {
+  height: 2rem;
+  width: 2rem;
 }
 `

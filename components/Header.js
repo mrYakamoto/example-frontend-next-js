@@ -23,17 +23,17 @@ const Header = (props) => {
         <Link href="/articles"><a className='nav-item'>About Me</a></Link>
         <a className='twitter-link nav-item' href=''>
           <div className='icon-wrapper'>
-            <TwitterIcon style={iconStyle}/>
+            <TwitterIcon />
           </div>
         </a>
         <a className='linkedIn-link nav-item' href=''>
           <div className='icon-wrapper'>
-            <LinkedInIcon style={iconStyle}/>
+            <LinkedInIcon />
           </div>
         </a>
         <a className='facebook-link nav-item' href=''>
           <div className='icon-wrapper'>
-            <FacebookIcon style={iconStyle}/>
+            <FacebookIcon />
           </div>
         </a>
       </nav>

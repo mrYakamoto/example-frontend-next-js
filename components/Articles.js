@@ -11,14 +11,22 @@ const Articles = (props) => {
   return (
     <div className='articles-container cell'>
       <ul className="list grid-x grid-padding-x small-up-1 large-up-2 small-padding-collapse">
-        {articles.map(article => (
-          <li key={article._id} className="list__item cell">
-            <Article {...article} />
-          </li>
-        ))}
+        {articles.length &&
+          articles.map((article, i) => articleMapper(article, i))
+        }
       </ul>
       <style jsx>{styles}</style>
     </div>
+  )
+}
+
+const articleMapper = (article, i) => {
+  const durationBetweenTrans = 100 * (i + 1)
+
+  return (
+    <li key={article._id} className="list__item cell">
+      <Article {...article} durationBetweenTrans={durationBetweenTrans} />
+    </li>
   )
 }
 

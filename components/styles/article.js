@@ -16,12 +16,15 @@ export default css`
 }
 
 .image {
+  height: 100%;
   width: 100%;
 }
 
 .article-link {
   height: 100%;
   left: 0;
+  padding-bottom: .2rem;
+  padding-left: .2rem;
   position: absolute;
   top: 0;
   width: 100%;

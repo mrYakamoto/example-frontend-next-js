@@ -16,13 +16,15 @@ class Article extends React.Component{
     const imgUrl = urlFor(imgRef).height(248).width(434).fit('crop')
 
     return (
-      <div>
+      <div className='article-card-wrapper'>
         <div
           className='article-card'
         >
           <a className='article-link' href={articleUrl} target='_blank'>
-            <img className='image' src={imgUrl} alt='lorem' />
-            <div className='overlay'>
+            <div className='front'>
+              <img className='image' src={imgUrl} alt='lorem' />
+            </div>
+            <div className='back'>
               {title &&
                 <h3 className='article-title'>{title}</h3>
               }

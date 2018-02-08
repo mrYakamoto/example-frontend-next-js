@@ -12,7 +12,6 @@ export default css`
 }
 
 .list__item {
-  padding-bottom: .2rem;
-  padding-left: .2rem;
+  padding: 0 0 .2rem .2rem !important;
 }
 `

@@ -20,13 +20,15 @@ const Publication = (props) => {
         <ul className='articles'>
           {articles.map(function(article, i) {
             return (
-              <li key={`${id}-${i}`}>
+              <li className='article' key={`${id}-${i}`}>
                 <a
                   className='article-link'
                   href={article.articleUrl}
                   target='_blank'
                 >
-                  {article.title}
+                  <h5 className='article-title'>
+                    {article.title}
+                  </h5>
                 </a>
               </li>
             )

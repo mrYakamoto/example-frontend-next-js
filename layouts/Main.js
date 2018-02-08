@@ -1,6 +1,5 @@
 import Head from 'next/head'
 
-import styles from './styles/layout'
 import foundationNormalize from 'lib/foundation-normalize'
 import foundationGrid from 'lib/foundation-xy-grid'
 
@@ -13,6 +12,8 @@ const MainLayout = props => (
       <meta charSet="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Jason O. Gilbert</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+      <link href="/static/css/typography.css" rel="stylesheet" />
     </Head>
     <Header />
     <div id="main">
@@ -21,7 +22,6 @@ const MainLayout = props => (
     <Footer />
     <style jsx global>{foundationNormalize}</style>
     <style jsx global>{foundationGrid}</style>
-    <style jsx>{styles}</style>
   </div>
 )
 

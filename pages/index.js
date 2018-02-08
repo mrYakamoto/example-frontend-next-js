@@ -10,6 +10,7 @@ const articlesQuery = `*[_type == 'article'] | order(weight desc, date desc) {
   title,
   image,
   articleUrl,
+  publication->{name},
   weight
 } [0...50]
 `

@@ -2,9 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 
 import styles from './styles/header'
-import FacebookIcon from '../static/images/facebook.svg'
-import TwitterIcon from '../static/images/twitter.svg'
-import LinkedInIcon from '../static/images/linked-in.svg'
+import FacebookIcon from '../static/images/facebook-logo.svg'
+import TwitterIcon from '../static/images/twitter-logo.svg'
+import LinkedInIcon from '../static/images/linkedin-sign.svg'
 
 const Header = (props) => {
   let iconStyle = {
@@ -15,23 +15,23 @@ const Header = (props) => {
   return (
     <header className='grid-container fluid grid-x'>
       <Link href='/'>
-        <a className='cell small-3'>
+        <a className='page-title-container cell small-3'>
           <h3 className='page-title'>Jason O. Gilbert</h3>
         </a>
       </Link>
-      <nav className='cell small-9'>
+      <nav className='nav-container cell small-9'>
         <Link href="/articles"><a className='nav-item'>About Me</a></Link>
-        <a className='twitter-link nav-item' href=''>
+        <a className='twitter-link nav-item social-link' href=''>
           <div className='icon-wrapper'>
             <TwitterIcon />
           </div>
         </a>
-        <a className='linkedIn-link nav-item' href=''>
+        <a className='linkedIn-link nav-item social-link' href=''>
           <div className='icon-wrapper'>
             <LinkedInIcon />
           </div>
         </a>
-        <a className='facebook-link nav-item' href=''>
+        <a className='facebook-link nav-item social-link' href=''>
           <div className='icon-wrapper'>
             <FacebookIcon />
           </div>

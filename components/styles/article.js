@@ -43,4 +43,14 @@ export default css`
   transition: top .3s ease-in-out;
   width: 100%;
 }
+
+.article-title {
+  margin-bottom: .625rem;
+  padding-right: 2rem;
+}
+
+.publication-name {
+  border-bottom: .0625rem solid ${colors.black};
+  text-align: right;
+}
 `

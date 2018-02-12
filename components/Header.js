@@ -20,7 +20,7 @@ const Header = (props) => {
         </a>
       </Link>
       <nav className='nav-container cell small-9'>
-        <Link href="/articles"><a className='nav-item'>About Me</a></Link>
+        <Link href="/about-me"><a className='nav-item'>About Me</a></Link>
         <a className='twitter-link nav-item social-link' href=''>
           <div className='icon-wrapper'>
             <TwitterIcon />

@@ -30,7 +30,13 @@ export default class Articles extends React.Component {
   render() {
     let articles = _get(this.props, 'articles', [])
     articles = articles.map((article, i) => (
-      <div className='list__item cell' key={article._id} style={{...transitionStyles[this.state.transitionIn], ...defaultStyle(i)}}>
+      <div
+        className='list__item cell'
+        key={article._id}
+        style={{...transitionStyles[this.state.transitionIn], ...defaultStyle(i)}}
+        onMouseEnter={() => this.props.setActiveArticle(article._id)}
+        onMouseLeave={() => this.props.setActiveArticle(null)}
+      >
         <Article {...article} />
       </div>
     ))

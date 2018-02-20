@@ -1,0 +1,6 @@
+
+          window.__NEXT_REGISTER_PAGE('/about-me', function() {
+            var comp = module.exports=webpackJsonp([9],{206:function(e,t,l){e.exports=l(207)},207:function(e,t,l){"use strict";function a(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(t,"__esModule",{value:!0});var n=l(7),r=a(n),u=l(1),d=a(u),i=l(2),f=a(i),o=l(8),c=a(o),s=l(9),m=a(s),p=l(0),_=a(p),v=(l(23),l(33)),E=a(v),g=function(e){function t(){return(0,d.default)(this,t),(0,c.default)(this,(t.__proto__||(0,r.default)(t)).apply(this,arguments))}return(0,m.default)(t,e),(0,f.default)(t,[{key:"render",value:function(){return _.default.createElement(E.default,null,_.default.createElement("div",{className:"grid-container fluid"},_.default.createElement("div",{className:"grid-x"},_.default.createElement("div",{className:"cell medium-4 grid-x grid-padding-x"},_.default.createElement("h1",{className:"cell"},"Jason O. Gilbert"),_.default.createElement("h2",{className:"cell"},"Writer, editor, inspiration for the 2009 movie ",_.default.createElement("i",null,"Hotel for Dogs"))))))}}]),t}(_.default.Component);t.default=g}},[206]);
+            return { page: comp.default }
+          })
+        

@@ -1,6 +1,8 @@
 // This file is not going through babel transformation.
 // So, we write it in vanilla JS
 // (But you could use ES2015 features supported by your Node.js version)
+const isProd = (process.env.NODE_ENV || 'production') === 'production'
+
 
 const debug = process.env.NODE_ENV !== 'production'
 module.exports = {
@@ -10,5 +12,5 @@ module.exports = {
       // '/articles': { page: '/articles' }
     }
   },
-  // assetPrefix: !debug ? 'file:///Users/gregoryweh/Desktop/g-dev/react/next/example-frontend-next-js/out/' : ''
+  assetPrefix: isProd ? '/jog-portfolio-react' : '',
 }

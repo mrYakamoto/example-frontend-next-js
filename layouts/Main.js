@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 import foundationNormalize from 'lib/foundation-normalize'
 import foundationGrid from 'lib/foundation-xy-grid'
-import typography from 'static/css/typography.js'
+import typography from 'static/css/typography'
 
 import Header from 'components/Header'
 import Footer from 'components/Footer'

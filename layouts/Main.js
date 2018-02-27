@@ -13,7 +13,9 @@ const MainLayout = props => (
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <title>Jason O. Gilbert</title>
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
-      <link href="/static/css/typography.css" rel="stylesheet" />
+      {!this.props.dev && (
+        <link href={`${this.props.__NEXT_DATA__.assetPrefix}/static/css/typography.css`} rel="stylesheet" />
+      )}
     </Head>
     <Header />
     <div id="main">

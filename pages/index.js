@@ -33,6 +33,7 @@ export default class IndexPage extends React.Component {
   }
 
   static async getInitialProps() {
+    debugger
     return {
       articles: await configuredSanityClient.fetch(articlesQuery),
       publications: await configuredSanityClient.fetch(publicationsQuery)

@@ -1,3 +1,6 @@
+import css from 'styled-jsx/css'
+
+export default css`
 h1,
 h2,
 h3,
@@ -10,3 +13,4 @@ span {
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
+`

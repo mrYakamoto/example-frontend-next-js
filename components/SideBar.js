@@ -9,7 +9,7 @@ export default (props) => {
       {props.publications.map(function(publicationContent) {
         return (
           <div className='publication-wrapper' key={publicationContent._id}>
-            <Publication {...publicationContent} />
+            <Publication {...publicationContent} activeArticleId={props.activeArticleId} />
           </div>
         )
       })}

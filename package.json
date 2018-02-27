@@ -12,7 +12,8 @@
     "node-sass": "^4.7.2",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
-    "react-transition-group": "^2.2.1",
+    "react-motion": "^0.5.2",
+    "react-transition-group": "^1.2.1",
     "styled-jsx-plugin-sass": "^0.2.2"
   },
   "devDependencies": {

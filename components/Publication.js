@@ -5,7 +5,7 @@ import _get from 'lodash.get'
 import { urlFor } from 'lib/sanity'
 
 const Publication = (props) => {
-  let id = _get(props, '_id')
+  let publicationId = _get(props, '_id')
   let articles = _get(props, 'articles', [])
 
   let imgRef = _get(props, 'image', {})
@@ -20,13 +20,18 @@ const Publication = (props) => {
         <ul className='articles'>
           {articles.map(function(article, i) {
             return (
-              <li key={`${id}-${i}`}>
+              <li className='article' key={`${publicationId}-${i}`}>
                 <a
                   className='article-link'
                   href={article.articleUrl}
                   target='_blank'
                 >
-                  {article.title}
+                  <h5 className='article-title'>
+                    {article._id === props.activeArticleId
+                      ? <i>{article.title}</i>
+                      : article.title
+                    }
+                  </h5>
                 </a>
               </li>
             )

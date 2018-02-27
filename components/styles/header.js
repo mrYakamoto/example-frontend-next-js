@@ -5,13 +5,20 @@ const navItemPadding = '1rem'
 
 export default css`
 header {
-  padding-bottom: .5rem;
+  padding-bottom: .8rem;
+  position: relative;
 
   &::after {
+    bottom: 0;
     content: '';
     display: block;
-    border-bottom: 1px solid ${colors.greys.grey};
-    width: 100%;
+    border-bottom: 1px solid ${colors.greys.lightGrey};
+    position: absolute;
+    width: calc(100% - ${spacing.gutters});
+  }
+
+  &.grid-container.fluid {
+    margin-bottom: 2rem;
   }
 
   .grid-container {
@@ -25,6 +32,23 @@ header {
   }
 }
 
+.page-title-container,
+.nav-container {
+  display: flex;
+}
+
+.page-title-container {
+  align-items: flex-end;
+}
+
+.page-title {
+  margin-bottom: .5rem;
+}
+
+.nav-container {
+  align-items: flex-end;
+}
+
 nav {
   align-items: center;
   display: flex;
@@ -36,6 +60,9 @@ nav {
 .nav-item {
   align-items: center;
   display: flex;
+  &.social-link {
+    padding: 0 .15rem;
+  }
 }
 
 .icon-wrapper {
